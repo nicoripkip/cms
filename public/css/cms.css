@@ -1,0 +1,355 @@
+/*Alle standaard css*/
+
+
+
+/* Alle modulaire css */
+/*Login css*/
+.login-card {
+    margin-top: 30vh;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    height: 400px;
+    background-color: white;
+
+}
+
+.login-card-content {
+    height: 300px;
+}
+
+.login-card-title {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-logo-card {
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Sidebar */
+.drop-btn {
+    
+}
+
+.dropdown-content {
+    
+}
+
+.show {
+    display: block;
+}
+
+.menu-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-hover {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-hover:hover {
+    border-radius: 5px;
+    background-color: #1AA650;
+}
+
+.active {
+    border-radius: 5px;
+}
+
+
+/* Menu */
+.menu-group {
+    border: 1px solid #000000;
+    min-height: 550px;
+    height: auto;
+    cursor: grab;
+}
+
+.menu_card {
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.holder {
+    width: auto;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+
+.holder:hover {
+    border: dotted 1px solid blac !important;
+}
+
+.invisible {
+    display: none;
+}
+
+.held {
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.hovered {
+    border: dotted 1px black !important;
+}
+/* Gebruikers */
+/* Gebruikers - Read */
+
+
+/* Gebruikers - Create */
+.form-image {
+    text-align: center;
+}
+
+.create-input-image  {
+    width: 25vw;
+    height: 25vw;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    font-size: 6vw;
+    color: #000000; 
+
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.create-input-image [input=file] {
+    color: green;
+}
+
+.content-wrapper {
+    height: calc(100vh - 180px); 
+    overflow-y: auto;
+}
+
+.box {
+    padding: 10px;
+}
+
+/* Page  css */
+
+.builder-page {
+    min-height: 700px;
+}
+
+.builder-page-attributes {
+    margin-bottom: 10px;
+    min-height: 350px;
+    border: 1px solid black;
+    overflow-y: hidden;
+}
+
+.builder-page-attributes-head {
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+
+.attribute-card {
+    height: 70px;
+    border: 1px solid black;
+}
+
+.builder-page-attr-settings {
+    margin-top: 10px;   
+    min-height: 350px;
+    border: 1px solid black;
+}
+
+.page-grid {
+    border: 1px solid grey;
+    width: 0.8vw;
+    height: 0.8vw;
+}
+
+
+/* Theme card*/
+.theme-card {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    width: calc(25% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.theme-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.theme-card-wrapper a {
+    width: 100%;
+}
+
+@media only screen and (max-device-width : 900px) {
+    .theme-card {
+        width: calc(50% - 20px) !important;
+    }
+}
+
+.theme-card-hover-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.theme-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.theme-card-image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.theme-card:hover {
+    cursor: pointer;
+}
+
+.theme-card:hover .theme-card-h1 {
+    display: none;
+}
+
+.theme-card:hover .theme-card-hover {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.theme-card-hover {
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.theme-card-button {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.theme-card-h1 {
+
+}
+
+.theme-card-icon {
+    color: #000000;
+    font-size: 10vh;
+    position: relative;
+}
+
+
+
+/*Template builder*/
+.el-active {
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+.el-inactive {
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+.item_card {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 70px;
+    width: 30.5%;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+/* Page builder */
+.page-input-image {
+    width: 100%;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Pagina tabellen */
+.table_row {
+    
+}
+
+
+/* Message center */
+.melding-menu {
+    width: 300px;
+    min-height: 150px;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-menu-lg {
+    max-width: 300px;
+    min-width: 280px !important;
+    padding: 0;
+}
+
+.dropdown-menu-lg .dropdown-item {
+    padding: .5rem 1rem;
+}
+.dropdown-menu-lg .dropdown-divider {
+    margin: 0;
+}
+.dropdown-divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+
+.pull-center {
+    text-align: center;
+}

@@ -1,0 +1,395 @@
+/*
+ * Template: Test
+ * Version: 1.0
+ * Company: Hoornbeeck
+ * Author: Nico van Ommen test
+ * Lisence: Gnu v3
+ * Date: 13-03-2020
+*/
+
+//Maxins
+@mixin media($class) {    
+    @if $class == desktop {
+      @media only screen and (min-width: 1200px) { @content; }
+    }
+
+    @else if $class == tablet-landscape {
+      @media only screen and (min-width: 900px) and (max-width: 1199px) { @content; }
+    }
+
+    @else if $class == tablet-portrait {
+      @media only screen and (min-width: 600px) and (max-width: 899px) { @content; }
+    }
+
+    @else if $class == phone {
+      @media only screen and (max-width: 600px) { @content; }
+    }
+}
+
+//wrapper
+.wrapper {    
+    @include media('phone') {
+      padding: 0 20px;
+    }
+
+    @include media('tablet-portrait') {
+      padding: 0 50px; 
+    }
+
+    @include media('tablet-landscape') {
+      padding: 0 50px;
+    }
+
+    @include media('desktop') {
+      padding: 0 100px; 
+    }
+
+    max-width: 1540px;
+    margin: auto;
+}
+
+/*Alle standaard css*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Alle modulaire css */
+
+.row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
+/* Menu */
+.menu-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    z-index: 1;
+    display: inline-flex;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu-bar-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-bar-header-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.menu-bar-navigation {
+    @media only screen and (max-width: 1000px) {
+        display: none;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: gainsboro;
+        z-index: 100;
+        margin: 0;
+        padding-top: 100px;
+
+        li {
+            width: 50%;
+            text-align: center;
+            margin: 10px auto;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        right: 100px;
+        top: 40px;
+    }
+
+    display: block;
+    position: absolute;
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.hamburgermenu {
+    @media only screen and (max-width: 1000px) {
+        display: block;
+        position: absolute;
+        right: 100px;
+    }
+
+    @include media('phone') {
+        right: 50px;
+    }
+
+    display: none;
+}
+
+.hamburgermenu-close {
+    @media only screen and (max-width: 1000px) {
+        z-index: 101;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    display: none;
+}
+
+.bar {
+    height: 132px;
+}
+
+.brand-size {
+    font-size: 37px !important;
+}  
+
+.menu-logo {
+    width: 100px;
+}
+
+.menu-item {
+    text-align: center;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+    z-index: 1 !important;
+    display: inline-block;
+    height: 100% !important;
+    width: 100%;
+}
+
+
+.active {
+    background-color: #00ea67;
+    border-radius: 15px;
+    color: #ffffff !important;
+}
+
+/* Home pagina */
+.home_body {
+    height: 800px;
+}
+
+.slider-text {
+    width: 40%;
+}
+
+.slider-image {
+    width: 60%;
+}
+
+.slider_image {
+    height: 100%
+}
+
+.owl-nav {
+    position: absolute;
+    top: 10px;
+}
+
+.color-bar {
+    background-color: #00ea67;
+    height: 5px;
+    width: 35px;
+}
+
+.footer_column {
+    @include media('tablet-landscape') {
+        width: 50%;
+        margin: 50px 0 50px 0;
+
+    }
+    @include media('tablet-portrait') {
+        width: 50%;
+        margin: 50px 0 50px 0;
+    }
+    @include media('phone') {
+        width: 100%;
+        margin: 40px 0 40px 0;
+    }
+
+    width: 25%;
+    color: white;
+    margin: 100px 0 100px 0;
+
+    i {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.footer_section_1_wrapper {
+    background-color: #505050;
+}
+
+.footer_section_2_wrapper {
+    background-color: #00ea67;
+
+    p {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.text {
+    margin: 50px 0;
+}
+
+.teasers {
+    @include media('phone') {
+        margin: 50px 0 50px 0;  
+    }
+
+    @include media('tablet-portrait') {
+        margin: 50px 0 50px -50px;  
+    }
+
+    @include media('tablet-landscape') {
+        margin: 50px 0 50px -50px;  
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 50px -100px;
+}
+
+.teaser {
+    @include media('phone') {
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+
+    @include media('tablet-portrait') {
+        margin: 0 0 50px 50px;
+        width: calc(100% / 2 - 50px);
+    }
+
+    @include media('tablet-landscape') {
+        margin: 0 0 0 50px;
+        width: calc(100% / 3 - 50px);
+    }
+
+    width: calc(100% / 3 - 100px);
+    box-shadow: 0px 3px 6px #00000066;
+    margin: 0 0 0 100px;
+    border-radius: 5px;
+}
+
+.teasers-img {
+    max-height: 200px;
+
+    img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.teasers-content {
+    margin: 25px;
+}
+
+.vogeldetail-img {
+    width: calc(40% + 100px);
+    height: calc(100vh - 130px);
+    margin: 0 0 0 -100px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.color-box {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.vogeldetail-content {
+    width: 60%;
+}
+
+.vogeldetail-content-box {
+    margin: 50px;
+}
+
+.vogeldetail-content-color {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+
+    input {
+        display: none;
+    }
+
+    input:checked + label{
+    }
+
+    label {
+        position: relative;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+        height: 100px;
+        width: 100%;
+        line-height: 100px;
+        display: block;
+        cursor: pointer;
+        border: 3px solid transparent;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    input:checked + label:after, input:checked + label:after, input:checked + label:after{
+        content: "\2713";
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 100%;
+        border: 2px solid #333;
+        background-color: #2fcc71;
+        z-index: 999;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+}
+
+.vogeldetail-content-color-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

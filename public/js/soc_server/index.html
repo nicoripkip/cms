@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Webserver</title>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script src="https://kit.fontawesome.com/2098348b1b.js"></script>
+		<style>
+			body {
+				margin :0px;
+				padding: 0px;
+
+				background-color: #e5e5e5;
+			
+			}
+			.container {
+				left: 50%;
+				transform: translate(-50%);
+				position: fixed;
+			}
+
+
+			/*Alle css van de img*/
+			.img_object {
+				margin-top: 10vh;
+			}
+			
+			.img_loading_bar {
+				width: 15vw;
+				height: 15vw;
+				border-radius: 50%;
+				border: 2.5vw solid #008EA6;
+				vertical-align: middle;
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+
+				
+			}
+
+
+			/*.cirkle {
+				clip: rect(0px, 15vw, 15vw, 0px );
+				position: absolute; 
+				color: green;
+			}*/
+
+			.check_style {
+				color: #008EA6;
+				font-size: 15vw;
+				position: fixed;
+				left: 50%;
+				transform: translateX(-50%);
+
+				animation: loadvink 1s linear;
+			}
+			
+
+			/*Dit is alle css styling van de message*/
+			.server_msg {
+				color: #8c8c8c;
+				text-align: center;
+
+				margin-top: 25vw;
+			}
+
+			.server_msg_title {
+				font-size: 2.5vw;
+				
+				
+				
+				animation: fliptitle 4s linear;
+			}
+			
+			.server_msg_title_zoom {
+				animation: zoomtitle 4s linear;
+			}
+
+			.ok_span {
+				color: green;
+			}
+
+			/*Alle css voor de links*/
+			.extra_links {
+				width: 100%;
+				height: auto;
+				margin-top: 5vh;
+			}
+
+			.extra_links ul{
+				list-style: none;
+				margin-left: auto;
+				margin-right: auto;
+				padding-left: 0px;
+				padding-right: 0px;
+				width: 100%;
+				height: auto;
+			}
+
+			.extra_links li{
+				display: inline-block;
+				width: 5vw;
+				height: 5vw;
+				border: 1px solid black;
+				border-radius: 50%;
+				text-align: center;
+				margin-left: 1vh;
+				margin-right: 1vh;
+				vertical-align: middle;
+			}
+
+			.extra_link_a {
+				margin-top: 40px;
+				background-color: white;
+			}
+
+			.overlay {
+				background-color: #008EA6;
+			}
+
+			.overlay .extra_link_a:hover {
+				display: block;
+				cursor: pointer;
+			}
+
+			.link_icon {
+				color: #008EA6;
+				font-size: 2vw;
+			}
+
+			/*Alle webkits*/
+			@keyframes loadvink {
+				0% { transform: scale(0); }
+				100% { transform: scale(1.3); }
+			}
+
+			@keyframes zoomtitle {
+				from {
+					transform: scale(0);
+				} to {
+					transform: scale(1);
+				}
+			}
+
+			@keyframes fliptitle {
+				from {
+					transform: rotateY(0deg);
+				} to {
+					transform: rotateY(360deg);
+				}
+			}
+
+
+
+			.circle.left {
+				position: absolute;
+				clip: rect(0, 20vw, 20vw, 8.9vw);
+			}
+
+			.circle.right {
+				position: absolute;
+				clip: rect(0vw, 8.9vw, 20vw, 0vw);
+			}
+
+			.circle span {
+				width: 15vw;
+				height: 15vw;
+				border-radius: 100%;
+				position: absolute;
+				opacity: 1;
+				border: 19px solid #008EA6;
+			}
+
+			.circle.left span {
+				clip: rect(0, 8.9vw, 20vw, 0vw);
+				-webkit-animation: rotate-left 2s linear forwards;
+			}
+
+			.circle.left span:focus {
+			}
+
+			.circle.right span {
+				clip: rect(0, 20vw, 20vw, 8.9vw);
+				-webkit-animation: rotate-right 2s  linear forwards;
+			}
+
+			@-webkit-keyframes rotate-left {
+				0% { -webkit-transform: rotate(0deg); }
+				50% { -webkit-transform: rotate(180deg); }
+				100% { -webkit-transform: rotate(180deg); }
+			}
+
+			@-webkit-keyframes rotate-right {
+				0% { -webkit-transform: rotate(0deg); }
+				50% { -webkit-transform: rotate(0deg); }
+				100% { -webkit-transform: rotate(180deg); }
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="img_object">
+
+				<div class="radial">
+    				<div class="circle left rotate"><span></span></div>
+    				<div class="circle right rotate"><span></span></div>
+					<i class="fas fa-check check_style"></i>
+				</div>
+				
+				<!-- <div class="img_loading_bar cirkle"><span>
+					
+				</span></div> -->
+			</div>		
+
+			<div class="server_msg">
+				<div class="server_msg_title_zoom">
+					<h1 class="server_msg_title ">U bent: <span class="ok_span">Verbonden</span> :) </h1>
+				</div>
+				<p>De server draait op port: 5000</p>
+			</div>
+
+			<div class="extra_links">
+				<ul>
+					<li>
+						<a class="extra_link_a" href="https://crob.nl/home"><i class="fas fa-blog link_icon"></i></a>
+						<div class="overlay"></div>
+					</li>
+
+					<li>
+						<a class="extra_link_a" href="#"><i class="fab fa-facebook-square link_icon"></i></a>
+						<div class="overlay"></div>
+					</li>
+
+					<li>
+						<a class="extra_link_a" href="#"><i class="fab fa-instagram link_icon"></i></a>
+						<div class="overlay"></div>
+					</li>
+
+					<li>
+						<a class="extra_link_a" href="#"><i class="fab fa-github-square link_icon"></i></a>
+						<div class="overlay"></div>
+					</li>
+				</ul>
+			</div>
+
+			
+		</div>
+	</body>
+</html>

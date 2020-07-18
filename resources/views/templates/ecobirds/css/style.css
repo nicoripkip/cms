@@ -1,0 +1,19 @@
+/*
+ * Template: Test
+ * Version: 1.0
+ * Company: Hoornbeeck
+ * Author: Nico van Ommen
+ * Lisence: Gnu v3
+ * Date: 13-03-2020
+ *
+*/
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: green;
+}
+
+html {
+    background-color: green !important;
+}

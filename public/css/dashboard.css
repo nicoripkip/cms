@@ -1,0 +1,453 @@
+/*Alle standaard css*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+  overflow-y: scroll !important;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+/*Alle variabele css*/
+/*Dashboard totaal*/
+.container {
+    float: left;
+    width: 100%;
+}
+
+/*Dashboard header*/
+
+
+/*Dashboard navbar*/
+
+
+/*Dashboard section */
+.table-border {
+    border: 1px solid black !important;
+}
+
+.span_dashboard_number {
+  color: #1580b4;
+  font-size: 5vh;
+}
+
+
+/*Slides aanmaken*/
+.card-slides {
+    height: 60px;
+    color: white;
+    background-color: #1580b4;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Success pagina*/
+.success-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    color: #636b6f;
+    font-weight: 200;
+    font-size: 300px;
+}
+
+/*Dashboard footer*/
+.welcome_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Slider css*/
+/*Slide type 1 css*/
+.slide-type-1 {
+    /* border: 1px solid black; */
+}
+
+.slide-type-1-header {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.slide-type-1-section {
+    text-align: center;
+    max-width: px;
+}
+
+.slide-type-1-p {
+    text-align: center;
+    font-size: 1vw;
+}
+
+/*Slide type 2 css*/
+
+.slide-container {
+    height: 100%;
+    background-color: #f2f2f2;
+    flex-shrink: 1;
+}
+
+.slide-type-2 {
+    height:100%;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+.slide-type-2-img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-type-2-img-img {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Slide type 3 css*/
+.slide-type-3 {
+    
+}
+
+.slide-type-3-col-img {
+    width: 50%;
+    height: 100%;
+}
+
+.slide-type-3-col-img-img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-type-3-col-text {
+    /* border:1px solid black; */
+    width: 50%;
+    height: 100%;
+}
+
+.slide-type-3-col-text-header {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 10vh;
+}
+
+.slide-type-3-col-text-section {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.full-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*Alle css van de slides*/
+.dots-div {
+    text-align: center;
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    /*background-color: #717171;*/
+  }
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  /*css voor de settings pagina*/
+  .settings_header {
+    font-size: 2vh;
+  }
+
+  .settings_font_select {
+    background-color: #1580b4;
+    color: white;
+    border-radius: 15px;
+    height: 27px;
+  }
+
+  .settings_font_option {
+    background-color: #ffffff;;
+    color: #1580b4;
+    border-top: 1px solid black;
+  }
+
+  /*////// CSS voor een slider \\\\\\\ */
+  .slider_som {
+    -webkit-appearance: none;
+    height: 23px;
+    background: #1580b4;
+    border-radius: 10px;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider_som:hover {
+    opacity: 1;
+  }
+  
+  .slider_som::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  .slider_som::-moz-range-thumb {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  /*///////\\\\\\\*/
+
+
+  .form-slide-number {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    color: #fff;
+    background-color: #1580b4;
+    border-radius: 15px;
+  }
+
+
+  .switchcheck {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+  }
+  
+  .switchcheck input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slidercheck {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slidercheck:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slidercheck {
+    background-color: #1580b4;
+  }
+  
+  input:focus + .slidercheck {
+    box-shadow: 0 0 1px #1580b4;
+  }
+  
+  input:checked + .slidercheck:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slidercheck.round {
+    border-radius: 34px;
+  }
+  
+  .slidercheck.round:before {
+    border-radius: 50%;
+  }
+
+/**/
+.widget {
+  display: block;
+  min-height: 17vh;
+  max-height: 17vh;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.widget_design {
+  font-size: 2vw;
+  background: transparent;
+  display: block;
+}
+
+.widget_links_boven {
+  position: fixed;
+  top: 3vh; 
+  left: 20%; 
+  transform: translateX(-80%);
+}
+
+.widget_rechts_boven {
+  position: fixed;
+  top: 3vh; 
+  left: 80%; 
+  transform: translateX(-20%);
+}
+
+.widget_links_onder {
+  text-align: center;
+  position: fixed;
+  bottom: 3vh;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.widget_rechts_onder {
+  text-align: center;
+  position: fixed;
+  bottom: 3vh; 
+  width: 50%;
+  border: 1px solid black;
+}
+
+
+/* Alle juiste widget classes */
+.widget_comp{
+  width: 50%;
+  height: 17vh;
+  text-align: center;
+}
+
+.widget_links {
+  float: left;
+}
+
+.widget_rechts {
+  float: right;
+}
+
+.weather_header {
+  font-size: 2vw;
+}
+
+
+/* Slide dingetjes */
+.slide-component {
+  flex-grow: 1;
+  height: 100%;
+  z-index: 0;
+}
+
+.VueCarousel{
+  height: 100%;
+}
+
+.VueCarousel-wrapper{
+  height: 100%;
+}
+
+.VueCarousel-inner{
+  height: 100% !important;
+}

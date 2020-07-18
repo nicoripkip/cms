@@ -1,0 +1,146 @@
+/*Alle standaard css*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Alle modulaire css */
+.image-column {
+    height: 100vh;
+    padding: 0px;
+}
+
+.image-column-content {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+.main-column {
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.95;
+}
+
+/* Image stijling */
+.image-box {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+
+/* input css */
+.input-form {
+    width: 100%;
+    padding-top: 30px;
+    border: none;
+    border-bottom: 1px solid #323232;
+    font-size: 20px;
+    background-color: #DEDEDE;
+}
+
+.input-form:focus {
+    outline: none;
+    border-bottom: 3px solid #323232;
+}
+
+
+/* Link box */
+.link-box {
+    margin-top: 21vh;
+}
+
+.link-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #323232;
+    text-decoration: none !important;
+}
+
+.link-left:hover {
+    color: 323232;
+}
+
+.link-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #323232;
+    text-decoration: none !important;
+}
+
+.link-right:hover {
+    color: #323232;
+}
+
+
+/* Card information */
+.close-item {
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+}
+
+.close-btn {
+    font-size: 40px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10  px;
+}
+
+.card-box {
+    width: 100%;
+    margin-top: 13vh;
+    margin-bottom: auto;
+}
+
+.card-item {    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 20vh;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+}
+
+.card-icon {
+    font-size: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 25%;
+    float: left;
+}
+
+.card-content {
+    position: relative !important;
+    width: 60%;
+    height: 100%;
+    float: left;
+    margin-top: 3vh;
+    font-size: 35px;
+    overflow: hidden;
+}
+
+.card-btn {
+    position: relative;
+    height: 100%;
+    width: 15%;
+    float: left;
+    margin-top: 8%;
+}
