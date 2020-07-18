@@ -1,6 +1,6 @@
-# README #
+# CMS #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Dit is mijn eigen ontworpen CMS. Dit CMS is gemaakt in een schoolproject en wordt onderhouden door mij.
 
 ### What is this repository for? ###
 
